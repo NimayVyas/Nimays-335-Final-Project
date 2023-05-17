@@ -1,0 +1,132 @@
+/* CSS styles for the medical survey satisfaction form */
+
+/* Styles for the body */
+body {
+    font-family: Arial, sans-serif;
+    /* Set the font family */
+    background-color: #f2f2f2;
+    /* Set the background color */
+    margin: 0;
+    /* Remove default margin */
+    padding: 20px;
+    /* Add padding */
+}
+
+/* Styles for the heading */
+h1 {
+    text-align: center;
+    /* Align the heading to the center */
+}
+
+/* Styles for the form */
+form {
+    max-width: 600px;
+    /* Set the maximum width of the form */
+    margin: 0 auto;
+    /* Center the form horizontally */
+    background-color: #ffffff;
+    /* Set the background color of the form */
+    padding: 20px;
+    /* Add padding */
+}
+
+/* Styles for the fieldset */
+fieldset {
+    margin-bottom: 20px;
+    /* Add margin at the bottom of each fieldset */
+    border: none;
+    /* Remove the border */
+}
+
+/* Styles for the legend */
+legend {
+    font-weight: bold;
+    /* Set the font weight to bold */
+    margin-bottom: 10px;
+    /* Add margin at the bottom of each legend */
+}
+
+/* Styles for the labels */
+label {
+    display: block;
+    /* Display labels as blocks */
+    margin-bottom: 10px;
+    /* Add margin at the bottom of each label */
+}
+
+/* Styles for the inputs */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="reset"],
+input[type="submit"],
+textarea {
+    width: 100%;
+    /* Set the width to 100% */
+    padding: 10px;
+    /* Add padding */
+    border: 1px solid #ccc;
+    /* Add border */
+    border-radius: 4px;
+    /* Add border radius */
+    box-sizing: border-box;
+    /* Set the box-sizing to border-box */
+    font-size: 16px;
+    /* Set the font size */
+}
+
+/* Styles for the select dropdown */
+select {
+    width: 100%;
+    /* Set the width to 100% */
+    padding: 10px;
+    /* Add padding */
+    border: 1px solid #ccc;
+    /* Add border */
+    border-radius: 4px;
+    /* Add border radius */
+    box-sizing: border-box;
+    /* Set the box-sizing to border-box */
+    font-size: 16px;
+    /* Set the font size */
+}
+
+/* Styles for the textarea */
+textarea {
+    resize: vertical;
+    /* Allow vertical resizing of the textarea */
+}
+
+/* Styles for the fieldset with radio inputs */
+fieldset:nth-child(3) label {
+    display: inline-block;
+    /* Display the labels inline */
+    margin-right: 10px;
+    /* Add margin to the right of each label */
+}
+
+/* Styles for the form buttons */
+input[type="reset"],
+input[type="submit"] {
+    background-color: #4CAF50;
+    /* Set the background color */
+    color: #ffffff;
+    /* Set the text color */
+    border: none;
+    /* Remove the border */
+    cursor: pointer;
+    /* Set the cursor to pointer */
+    padding: 10px 20px;
+    /* Add padding */
+    border-radius: 4px;
+    /* Add border radius */
+    font-size: 16px;
+    /* Set the font size */
+}
+
+/* Styles for the form buttons on hover */
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+    background-color: #45a049;
+    /* Change the background color on hover */
+}

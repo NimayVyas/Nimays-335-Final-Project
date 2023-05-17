@@ -1,0 +1,102 @@
+<!-- DO NOT MODIFY THIS FILE -->
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Medical Survey Satisfaction</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"> <!-- Linking an external CSS file -->
+</head>
+
+<body>
+    <h1>Medical Survey Satisfaction</h1>
+    <form action="http://localhost:5005/submit" method="post">
+        <!-- Creating a form with a POST method and an action URL -->
+        <fieldset>
+            <legend>
+                <strong>Patient Information</strong>
+            </legend>
+
+            <label>Name: <input type="text" name="name" /></label> <!-- Text input field for the patient's name -->
+            <label>Email Address: <input type="email" name="email" placeholder="example@notreal.notreal"></label>
+            <!-- Email input field for the patient's email address -->
+        </fieldset>
+
+        <fieldset>
+            <legend>Overall Satisfaction</legend>
+            <label><input type="radio" name="satisfaction" value="1">Very Dissatisfied</label>
+            <!-- Radio button for "Very Dissatisfied" option -->
+            <label><input type="radio" name="satisfaction" value="2">Dissatisfied</label>
+            <!-- Radio button for "Dissatisfied" option -->
+            <label><input type="radio" name="satisfaction" value="3">Neutral</label>
+            <!-- Radio button for "Neutral" option -->
+            <label><input type="radio" name="satisfaction" value="4">Satisfied</label>
+            <!-- Radio button for "Satisfied" option -->
+            <label><input type="radio" name="satisfaction" value="5">Very Satisfied</label>
+            <!-- Radio button for "Very Satisfied" option -->
+        </fieldset>
+
+        <fieldset>
+            <legend>Reason for Visit</legend>
+            <select name="reason"> <!-- Dropdown menu for selecting the reason for the visit -->
+                <option value="consultation">Consultation</option> <!-- Option for "Consultation" reason -->
+                <option value="diagnosis">Diagnosis</option> <!-- Option for "Diagnosis" reason -->
+                <option value="treatment">Treatment</option> <!-- Option for "Treatment" reason -->
+                <option value="follow-up">Follow-up</option> <!-- Option for "Follow-up" reason -->
+                <option value="other">Other</option> <!-- Option for "Other" reason -->
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend for="medicine">Medicine Prescribed:</legend>
+            <input type="text" id="medicine" name="medicine" required>
+            <!-- Text input field for the prescribed medicine -->
+        </fieldset>
+
+        <fieldset>
+            <legend>Comments or Feedback</legend>
+            <label><textarea rows="5" cols="80" name="comments"></textarea></label>
+            <!-- Textarea for entering comments or feedback -->
+        </fieldset>
+
+        <fieldset>
+            <legend>Additional Questions</legend>
+
+            <label>How would you rate the cleanliness of the facility? (1-10):
+                <input type="number" name="cleanliness" min="1" max="10" required>
+                <!-- Number input field for rating cleanliness -->
+            </label>
+
+            <label>Did you experience any difficulties during your visit? If yes, please describe:
+                <textarea rows="3" cols="80" name="difficulties"></textarea>
+                <!-- Textarea for describing difficulties experienced -->
+            </label>
+
+            <label>Are you satisfied<label>Are you satisfied with the waiting time? (Yes/No):
+                <input type="text" name="waitingTime" required>
+                <!-- Text input field for indicating satisfaction with waiting time -->
+            </label>
+            
+            <label>How well did the medical staff address your concerns? (1-5):
+                <input type="number" name="addressingConcerns" min="1" max="5" required>
+                <!-- Number input field for rating medical staff's response to concerns -->
+            </label>
+            
+            <label>Would you recommend our services to others? (Yes/No):
+                <input type="text" name="recommendation" required>
+                <!-- Text input field for indicating whether services would be recommended -->
+            </label>
+            
+            <label>Do you have any suggestions for improvement?
+                <textarea rows="3" cols="80" name="suggestions"></textarea>
+                <!-- Textarea for providing suggestions for improvement -->
+            </label>
+            </fieldset>
+            
+            <br>
+            <input type="reset" /> <!-- Reset button for clearing form inputs -->
+            <input type="submit" value="Submit" /> <!-- Submit button for submitting the form -->
+            </form>
+        </body>
+            
+</html>

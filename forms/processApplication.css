@@ -1,0 +1,51 @@
+/* CSS code for processApplication.css */
+
+/* Styles for the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+/* Styles for the h1 heading */
+h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Styles for the form data container */
+.form-data {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for the form data paragraphs */
+.form-data p {
+    margin: 0 0 10px;
+}
+
+/* Styles for the strong element within the form data paragraphs */
+.form-data strong {
+    font-weight: bold;
+}
+
+/* Styles for the quote of the day */
+.quote-of-the-day {
+    margin-top: 30px;
+}
+
+/* Styles for the quote text */
+.quote-text {
+    font-style: italic;
+    color: #777;
+}
+
+/* Styles for the quote author */
+.quote-author {
+    font-size: 12px;
+    color: #999;
+    margin-top: 5px;
+}
